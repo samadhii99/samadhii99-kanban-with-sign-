@@ -1,0 +1,89 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.ant-layout {
+  width: 100%;
+  height: 100%;
+  background-color: white !important;
+}
+
+/* Make sure no black background appears */
+.ant-layout-content {
+  background-color: white !important;
+}
+
+/* Form and input styles */
+.ant-form-item-required::before {
+  display: none !important;
+}
+
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.ant-input-affix-wrapper {
+  padding: 8px 11px;
+}
+
+.ant-input-affix-wrapper-lg {
+  padding: 10px 11px;
+}
+
+/* Button styles */
+.ant-btn-primary {
+  height: 44px;
+  font-weight: 500;
+}
+
+/* Card shadow and layout styles */
+.auth-card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Typography adjustments */
+.ant-typography {
+  margin-bottom: 8px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 480px) {
+  .auth-card {
+    box-shadow: none;
+    padding: 20px !important;
+  }
+}
+
+/* Fade in animation for alerts */
+.ant-alert {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
